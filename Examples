@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Test Task</title>
+        <link rel="stylesheet" href="11.css">
+    </head>
+    <body>
+    <div id="main">
+        <h3 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: larger;">Creating a chart</h3>
+        <p class="nice">To create a chart, we need to instantiate the <code class="mini">Chart</code> class. 
+        To do this, we need to pass in the 2d context of where we want to draw the
+        chart.<br>
+        Here`s an example:</p>
+        <div class="kod">
+            <code>
+                <span class="canv">&lt;canvas</span> <span class="prop">id=</span><span class="chart">"myChart"</span> <span class="prop">width=</span><span class="chart">"400"</span> <span class="prop">height=</span><span class="chart">"400"</span><span class="canv">>&lt;/canvas></span>
+            </code>
+        </div>
+        <div class="kod">
+            <code>
+                <span class="comm">// Get the context of the canvas element we want to select</span><br>
+                <b>var</b> ctx = <span style="color: rgb(33, 147, 196);">document</span>.getElementById(<span class="chart">"myChart"</span>).getContext(<span class="chart">"2d"</span>);<br>
+                <b>var</b> myNewChart = <b>new</b> Chart(ctx).PolarArea(data);<br>
+            </code>
+        </div>
+        <p class="nice">We can also get the context of our canvas with jQuery. To do this, we need to get the DOM node out of the jQuery collection, and call the <code class="mini">getContext("2d")</code> method on that.</p>
+        <div class="kod" style="overflow-x: scroll;">
+            <code>
+                <span class="comm">// Get context with jQuery - using jQuery`s .get() method.</span><br>
+                <b>var</b> ctx = $(<span class="chart">"#myChart"</span>).get(<span style="color: rgb(15, 199, 199);">0</span>).getContext(<span class="chart">"2d"</span>);<br>
+                <pre style="display: inline; color: rgba(138, 134, 65, 0.714); font-style: italic;">// This will get the first returned node in the jQuery collections</pre><br>
+                <b>var</b> myNewChart = <b>new</b> Chart(ctx);
+            </code>
+        </div>
+        <p class="nice">After we`ve instantiated the Chart class on the canvas we want to draw on,<br>
+            Chart.js will handle the scaling for retina displays.
+        </p>
+        <pre>
+    </div>
+    </body>
+</html>
