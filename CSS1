@@ -1,0 +1,42 @@
+#main { width: 472px;
+margin-left: 35%;
+margin-top: 5%;
+}
+
+.nice { font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(93, 90, 128);
+    line-height: 1.4;
+}
+
+.kod { line-height: 1.1;
+    height: auto;
+    width: 460px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    background-color: rgba(238, 238, 238, 0.741);
+    border-radius: 5px;
+    margin-top: 16px;
+}
+.chart {
+    color: rgb(228, 7, 7);
+}
+.prop {
+    color: rgb(14, 117, 117);
+}
+.comm {
+    color: rgba(138, 134, 65, 0.714);
+    font-style: italic;
+}
+.canv {
+    color: rgb(16, 16, 145);
+}
+.mini {
+    font-size: medium;
+    color: rgba(0, 0, 0, 0.864);
+    background-color: rgba(238, 238, 238, 0.741);
+    padding:1.5px 3px 2px 4px;
+    border-radius: 3px;
+    vertical-align: 5%;
+}
